@@ -13,15 +13,12 @@ public class Board {
     public Boolean isInFavorOfX() {
         return isDiagonalOf('X') || isHorizontalOf('X') || isVerticalOf('X');
     }
-
     public Boolean isInFavorOfO() {
         return isDiagonalOf('O') || isHorizontalOf('O') || isVerticalOf('O');
     }
-
     public Boolean isTie() {
         return (!(isInFavorOfO() || isInFavorOfX()));
     }
-
     public String getWinner() {
         String winner = "";
         if (isInFavorOfX()) {
@@ -31,7 +28,6 @@ public class Board {
         }
         return winner;
     }
-
     public Boolean isHorizontalOf(Character player) {
 
         boolean isHorizontalFound = false;
@@ -43,7 +39,6 @@ public class Board {
         }
         return isHorizontalFound;
     }
-
     public Boolean isVerticalOf(Character player) {
 
         boolean isVerticalFound = false;
@@ -55,7 +50,6 @@ public class Board {
         }
         return isVerticalFound;
     }
-
     public Boolean isDiagonalOf(Character player) {
 
         boolean isLeftDiagonalFound = true;
