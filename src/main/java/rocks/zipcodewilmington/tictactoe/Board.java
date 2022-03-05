@@ -35,11 +35,6 @@ public class Board {
     public Boolean isHorizontalOf(Character player) {
 
         boolean isHorizontalFound = false;
-
-        //for (int i = 0; i < matrix.length; i++) {
-          //  if (matrix[0][i] == player && matrix[1][i] == player && matrix[2][i] == player) {
-            //    isHorizontalFound = true;
-              //  break;
        for (Character[] characters : matrix) {
            if (characters[0] == player && characters[1] == player && characters[2] == player) {
                isHorizontalFound = true;
