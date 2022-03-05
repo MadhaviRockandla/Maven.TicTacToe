@@ -4,7 +4,7 @@ package rocks.zipcodewilmington.tictactoe;
  * @author leon on 6/22/18.
  */
 public class Board {
-    private final Character[][] matrix;
+    Character[][] matrix;
 
     public Board(Character[][] matrix) {
         this.matrix = matrix;
